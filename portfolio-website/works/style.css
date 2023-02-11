@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "heebo";
+    src: url(/portfolio-website/assets/fonts/Heebo-Regular.ttf);
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+:root{
+    --super-title-font-size: clamp(2rem, 9vh - 1vh, 2.75rem);
+    --section-title-font-size: clamp(1.125rem, 50%, 1.375rem);
+    --recent-post-title-font-size: clamp(1.35rem, 0.2vh, 1.625rem);
+    --featured-post-font-font-size: clamp(1.5rem, 50%, 1.8rem);
+    --normal-font: 1rem;
+    --font-family: "heebo";
+}
+
+.container {
+    margin: 0 auto;
+    width: min(80%, 85rem);
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 450px){
+    .container {
+        margin: 0 auto;
+        width: min(100%, 85rem);
+        min-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.workpage {
+    margin: 0 auto;
+    width: min(90%, 75rem);
+    height: auto;
+    max-width: 1200px;
+    min-width: 400px;
+}
+
+
+/* menu section styling start */
+
+.menu-section {
+    margin: 2rem auto;
+    width: min(80%, 75rem);
+    min-width: 250px;
+}
+
+.menu {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+li {
+    font-size: 1.25rem;
+    font-family: var(--font-family);
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hamburger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (min-width: 450px){
+    .hamburger {
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+/* menu section styling end */
+
+
+
+
+/* Hero sectiont styling start */
+
+.blog-hero-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.super-title {
+    font-size: var(--super-title-font-size);
+    font-family: var(--font-family);
+    font-weight: 500px;
+}
+
+/* Hero section styling end */
+
+/* Hero section styling start */
+    .hero {
+        width: 100%;
+        margin-left: 2rem;
+    }
+
+    @media(min-width: 450px){
+        .hero {
+            margin-left: 0 auto;
+            width: 80%;
+        }
+    }
+/* Hero section styling end */
+
+
+
+
+/* featured works section styling start */
+
+.featured-post-section {
+    width: 100%;
+    min-width: 400px;
+}
+
+.featured-post .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .featured-works-card {
+        margin: 0.5rem auto;
+        width: min(90%, 75rem);
+        margin-top: 6%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2%;
+    }
+
+    .featured-card-image {
+        height: 200px;
+    }
+
+    .featured-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .detail-title {
+        font-size: 1.875rem;
+        font-family: var(--font-family);
+        font-weight: 700;
+    }
+
+    .detail-subtitle {
+        margin-top: 1.15rem;
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        gap: 1.325rem;
+        margin-bottom: 1.275rem;
+    }
+
+    .detail-subtitle .batch {
+        background: #142850;
+        border-radius: 1rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 1rem;
+        font-family: var(--font-family);
+    }
+
+    .detail-subtitle .project-name {
+        color: #8695A4;
+        font-size: 1.25rem;
+    }
+
+    .card-detail {
+        margin-top: 0.632rem;
+        font-size: var(--normal-font);
+        font-family: var(--font-family);
+    }
+
+    .divider {
+        border: 1px solid #E0E0E0;
+    }
+
+    @media (min-width: 450px){
+        .featured-works-card {
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: 35% 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2%;
+        }
+
+        .featured-post .section-title {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .detail-subtitle .batch {
+            background: #142850;
+            border-radius: 1rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+            font-size: 1.125rem;
+            font-family: var(--font-family);
+        }
+    }
+
+
+/* featured works section styling end */
+
