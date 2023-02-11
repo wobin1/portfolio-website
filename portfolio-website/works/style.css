@@ -245,3 +245,41 @@ li a {
 
 /* featured works section styling end */
 
+
+
+
+/* footer section styling start */
+
+.footer-section {
+    margin-top: 9.375rem;
+
+    margin-bottom: 3.375rem;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.copyright {
+    margin-top: 7%;
+    font-style: normal;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #21243D;
+}
+
+
+@media (min-width: 450px){
+    .footer-section {
+        margin-top: 2.188rem;
+
+        margin-bottom: 3.375rem;
+    }
+}
+/* footer section styling end */
